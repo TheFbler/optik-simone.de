@@ -34,7 +34,7 @@
       <h3 class="centerText">ÜBER UNS</h3>
       <hr/>
       <ul class="anordnungAbout">
-        <li><img src="https://via.placeholder.com/900x600.png"/></li>
+        <li><img src="https://via.placeholder.com/600x400.png"/></li>
         <li><?php echo file_get_contents("texts/about1.txt"); ?></li>
       </ul>
     </section>
