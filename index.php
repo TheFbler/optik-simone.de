@@ -35,7 +35,12 @@
       <hr/>
       <ul class="anordnungAbout">
         <li><img src="https://via.placeholder.com/600x400.png"/></li>
-        <li><?php echo file_get_contents("texts/about1.txt"); ?></li>
+        <li><p><?php echo file_get_contents("texts/about1.txt"); ?></p></li>
+      </ul>
+      <br style="clear: both;"/>
+      <ul class="anordnungAbout">
+        <li><p><?php echo file_get_contents("texts/about2.txt"); ?></p></li>
+        <li><img src="https://via.placeholder.com/600x400.png"/></li>
       </ul>
     </section>
 
