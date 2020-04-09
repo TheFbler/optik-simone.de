@@ -141,6 +141,14 @@ header nav ul li:hover {
   margin: 0 auto 0 auto;
 }
 
+#about h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  color: #9a0d13;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .anordnungAbout {
   padding: 0;      /* Override defaults for lists */
   margin: 0 auto 0 auto;       /* Override defaults for lists */
