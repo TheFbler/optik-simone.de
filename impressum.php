@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/e8ddae4d2d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="mg/logo_favi.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/logo_favi.ico" type="image/x-icon"> 
+    <link rel="shortcut icon" href="img/logo_favi.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -26,7 +26,9 @@
     <!-- Header per PHP einfügen -->
     <?php echo file_get_contents("parts/header.html"); ?>
 
+    <section>
 
+    </section>
 
     <?php echo file_get_contents("parts/footer.html"); ?>
     <script type="text/javascript" src="js/script.js"></script>
