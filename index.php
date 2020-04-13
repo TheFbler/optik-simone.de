@@ -31,29 +31,7 @@
       <div id="slideshow"></div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h3 class="centerText">ÜBER UNS</h3>
-      <hr/>
-      <ul class="anordnungAbout">
-        <li>
-          <img src="https://via.placeholder.com/600x400.png"/>
-        </li><!-- Fix white space between blocks
-        --><li>
-          <h2 class="centerText">Der Laden</h2>
-          <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
-        </li>
-      </ul>
-      <ul class="anordnungAbout">
-        <li>
-          <h2 class="centerText">Die Chefin</h2>
-          <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
-        </li><!-- Fix white space between blocks
-        --><li>
-          <img src="https://via.placeholder.com/600x400.png"/>
-        </li>
-      </ul>
-    </section>
+    <!-- LEISTUNGEN -->
 
     <section id="leistungen">
       <h3 class="centerText">LEISTUNGEN</h3>
@@ -86,6 +64,75 @@
         </li>
       </ul>
       <p class="leistungBeschreibung"><?php echo file_get_contents("texts/leistungen.txt"); ?></p>
+    </section>
+
+    <!-- HISTORIE -->
+
+    <section id="historie">
+      <h3 class="centerText">HISTORIE</h3>
+      <hr/>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            <h2>1960</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>1970</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>1998</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2000</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>2003</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>2005</h2>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h3 class="centerText">ÜBER UNS</h3>
+      <hr/>
+      <ul class="anordnungAbout">
+        <li>
+          <img src="https://via.placeholder.com/600x400.png"/>
+        </li><!-- Fix white space between blocks
+        --><li>
+          <h2 class="centerText">Der Laden</h2>
+          <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
+        </li>
+      </ul>
+      <ul class="anordnungAbout">
+        <li>
+          <h2 class="centerText">Die Chefin</h2>
+          <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
+        </li><!-- Fix white space between blocks
+        --><li>
+          <img src="https://via.placeholder.com/600x400.png"/>
+        </li>
+      </ul>
     </section>
 
     <!-- CONTACT -->
