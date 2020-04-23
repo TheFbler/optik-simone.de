@@ -114,37 +114,37 @@ header nav ul li:hover {
 
 @-webkit-keyframes slider {
   0% {
-    background-image: url('../img/slideshow1.jpeg');
+    background-image: url('../img/slideshow1.png');
   }
   25% {
-    background-image: url('../img/slideshow2.jpeg');
+    background-image: url('../img/slideshow2.png');
   }
   50% {
-    background-image: url('../img/slideshow3.jpeg');
+    background-image: url('../img/slideshow3.png');
   }
   75% {
-    background-image: url('../img/slideshow4.jpeg');
+    background-image: url('../img/slideshow4.png');
   }
   100% {
-    background-image: url('../img/slideshow5.jpeg');
+    background-image: url('../img/slideshow5.png');
   }
 }
 
 @keyframes slider {
   0% {
-    background-image: url('../img/slideshow1.jpeg');
+    background-image: url('../img/slideshow1.png');
   }
   25% {
-    background-image: url('../img/slideshow2.jpeg');
+    background-image: url('../img/slideshow2.png');
   }
   50% {
-    background-image: url('../img/slideshow3.jpeg');
+    background-image: url('../img/slideshow3.png');
   }
   75% {
-    background-image: url('../img/slideshow4.jpeg');
+    background-image: url('../img/slideshow4.png');
   }
   100% {
-    background-image: url('../img/slideshow5.jpeg');
+    background-image: url('../img/slideshow5.png');
   }
 }
 
