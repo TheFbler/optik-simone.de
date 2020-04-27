@@ -38,32 +38,32 @@
       <hr/>
       <h4 class="centerText">Spiegelauer Brillenwerkstatt - echtes Brillenhandwerk für besten Durchblick</h4>
       <ul class="centerText">
-        <li>
+        <li onclick="changeTextLeistung('Brillen')">
           <i class="fas fa-glasses"></i>
           <p>Brillen</p>
         </li>
-        <li>
+        <li onclick="changeTextLeistung('Kontaktlinsen')">
           <i class="fas fa-eye"></i>
           <p>Kontaktlinsen</p>
         </li>
-        <li>
+        <li onclick="changeTextLeistung('Fuehrerscheinsehtest')">
           <i class="fas fa-car"></i>
           <p>Führerscheinsehtest</p>
         </li>
-        <li>
+        <li onclick="changeTextLeistung('Passbilder')">
           <i class="fas fa-camera-retro"></i>
           <p>Passbilder</p>
         </li>
-        <li>
+        <li onclick="changeTextLeistung('Beratung')">
           <i class="fas fa-comments"></i>
           <p>Beratung</p>
         </li>
-        <li>
+        <li onclick="changeTextLeistung('Reperaturen')">
           <i class="fas fa-tools"></i>
           <p>Reparaturen</p>
         </li>
       </ul>
-      <p class="leistungBeschreibung"><?php echo file_get_contents("texts/leistungen.txt"); ?></p>
+      <p id="leistungBeschreibung"></p>
     </section>
 
     <!-- HISTORIE -->
@@ -74,38 +74,34 @@
       <div class="timeline">
         <div class="container left">
           <div class="content">
-            <h2>1960</h2>
-            <p>Lorem ipsum..</p>
+            <h2>1990</h2>
+            <p>Eröffnung des Augenoptikfachgeschäfts von Herrn Gunther Walter in Spiegelau</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
-            <h2>1970</h2>
-            <p>Lorem ipsum..</p>
+            <h2>1994</h2>
+            <p>Abschluss meiner Lehre bei Optik Walter mit der Gesellenprüfung in München.</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
             <h2>1998</h2>
-            <p>Lorem ipsum..</p>
+            <p>Erfolgreich die Meisterprüfung im Augenoptikerhandwerk, mit Auszeichnung der Privatschule für Augenoptik in Karlsruhe, abgelegt.</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
             <h2>2000</h2>
-            <p>Lorem ipsum..</p>
+            <p>Betriebsleiterin für die Filiale von Optik Walter in Spiegelau.</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
-            <h2>2003</h2>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="container right">
-          <div class="content">
-            <h2>2005</h2>
-            <p>Lorem ipsum..</p>
+            <h2>2020</h2>
+            <p>Mit der Erfahrung von 22 Meisterjahren erfülle ich mir nun meinen
+            Traum vom eigenen Optikfachgeschäft und mache den Schritt in die
+            Selbstständigkeit mit Optik Simone.</p>
           </div>
         </div>
       </div>
@@ -121,7 +117,7 @@
         </li><!-- Fix white space between blocks
         --><li>
           <h2 class="centerText">Der Laden</h2>
-          <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
+          <div class="alignmentOfP centerText"><p><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
         </li>
       </ul>
       <ul class="anordnungAbout">

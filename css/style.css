@@ -334,11 +334,11 @@ header nav ul li:hover {
 }
 
 #leistungen h4 {
-  font-weight: 400;
+  font-weight: 700;
 }
 
-.leistungBeschreibung {
-  width: 90%;
+#leistungBeschreibung {
+  width: 75%;
   margin: 25px auto 0 auto;
 }
 
@@ -357,6 +357,7 @@ header nav ul li:hover {
   display: inline-block;
   margin: 10px;
   opacity: 1;
+  cursor: pointer;
 }
 
 #leistungen ul li:nth-child(even) {
