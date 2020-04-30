@@ -135,86 +135,82 @@
     <section class="centerText" id="contact">
       <h3>KONTAKT</h3>
       <hr/>
-      <ul id="anordnung">
-        <li>
-          <ul id="contactinfo">
-            <li>
-              <h2>Öffnungszeiten:</h2><br/>
-              <p>Montag - Freitag:<br/>
-              09:00 - 13:00<br/>
-              14:00 - 18:00<br/>
-              <br/></p>
-              <p>Samstag:<br/>
-              09:00 - 12:00</p>
-            </li><!-- Fix white space between blocks
-            --><li>
-              <h2>Telefon:</h2><br/>
-              <p><a href="tel:085536463">08553 / 6463</a></p>
-            </li><!-- Fix white space between blocks
-            --><li>
-              <h2>Anschrift:</h2><br/>
-              <p>Hauptstr. 13<br/>
-              94518 Spiegelau</p>
-            </li><!-- Fix white space between blocks
-            --><li>
-              <h2>E-Mail:</h2><br/>
-              <p><a href="mailto:info@optik-simone.de">info@optik-simone.de</a></p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <div id="googlemaps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.0880339270648!2d13.360240315595057!3d48.913714979292926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e081e2797199%3A0xc306ecdf125206d9!2sHauptstra%C3%9Fe%2013%2C%2094518%20Spiegelau!5e0!3m2!1sde!2sde!4v1586096352777!5m2!1sde!2sde"
-                    width="100%"
-                    height="500"
-                    frameborder="0"
-                    style="border:0;"
-                    allowfullscreen=""
-                    aria-hidden="false"
-                    tabindex="0"></iframe>
-          </div>
-        </li>
-      </ul>
-      <?php
-      if(!empty($_POST["sendMail"])) {
-        if(isset($_POST['g-recaptcha-response'])){
-          $captcha=$_POST['g-recaptcha-response'];
-        }
-        if(!$captcha){
-          $message = "Bitte beachten Sie das Captcha!";
-          $type = "errorContact";
-        } else {//Wenn das Captcha geklickt wurde weiter prüfen
-          $ff = file('config/keys.txt');  //Secret Key nicht im Repo speichern
-          foreach($ff as $key=>$value) {
-            $ffe = explode("=", $value);//Wert vor und nach = auslesen
-            $ffa[$ffe[0]]=$ffe[1];//Key Value Paar in assozitivem Array speichern
+        <ul id="contactinfo">
+          <li>
+            <h2>Öffnungszeiten:</h2><br/>
+            <p>Montag - Freitag:<br/>
+            09:00 - 13:00<br/>
+            14:00 - 18:00<br/>
+            <br/></p>
+            <p>Samstag:<br/>
+            09:00 - 12:00</p>
+          </li><!-- Fix white space between blocks
+          --><li>
+            <h2>Telefon:</h2><br/>
+            <p><a href="tel:085536463">08553 / 6463</a></p>
+          </li><!-- Fix white space between blocks
+          --><li>
+            <h2>Anschrift:</h2><br/>
+            <p>Hauptstr. 13<br/>
+            94518 Spiegelau</p>
+          </li><!-- Fix white space between blocks
+          --><li>
+            <h2>E-Mail:</h2><br/>
+            <p><a href="mailto:info@optik-simone.de">info@optik-simone.de</a></p>
+          </li>
+        </ul>
+
+        <?php
+        if(!empty($_POST["sendMail"])) {
+          if(isset($_POST['g-recaptcha-response'])){
+            $captcha=$_POST['g-recaptcha-response'];
           }
-
-          $secretKey = $ffa["captchasecretkey"];//Secret Key auslesen
-          // post request to server
-          $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
-          $response = file_get_contents($url);
-          $responseKeys = json_decode($response,true);
-          // should return JSON with success as true
-          if($responseKeys["success"]) {
-            $name = $_POST["userName"];
-          	$email = $_POST["userEmail"];
-          	$content = $_POST["content"];
-
-          	$toEmail = "fabian@thefbler.de";
-            $mailHeaders = "From: " . $name . "<". $email .">\r\n";
-          	if(mail($toEmail, "Kontaktformular: Anfrage von " . $_POST["userName"], $content, $mailHeaders)) {
-          	    $message = "Anfrage wurde erfolgreich gesendet!";
-          	    $type = "successContact";
-          	}
-          } else {
-            $message = "Anfrage konnte nicht gesendet werden!";
+          if(!$captcha){
+            $message = "Bitte beachten Sie das Captcha!";
             $type = "errorContact";
+          } else {//Wenn das Captcha geklickt wurde weiter prüfen
+            $ff = file('config/keys.txt');  //Secret Key nicht im Repo speichern
+            foreach($ff as $key=>$value) {
+              $ffe = explode("=", $value);//Wert vor und nach = auslesen
+              $ffa[$ffe[0]]=$ffe[1];//Key Value Paar in assozitivem Array speichern
+            }
+
+            $secretKey = $ffa["captchasecretkey"];//Secret Key auslesen
+            // post request to server
+            $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+            $response = file_get_contents($url);
+            $responseKeys = json_decode($response,true);
+            // should return JSON with success as true
+            if($responseKeys["success"]) {
+              $name = $_POST["userName"];
+              $email = $_POST["userEmail"];
+              $content = $_POST["content"];
+
+              $toEmail = "fabian@thefbler.de";
+              $mailHeaders = "From: " . $name . "<". $email .">\r\n";
+              if(mail($toEmail, "Kontaktformular: Anfrage von " . $_POST["userName"], $content, $mailHeaders)) {
+                  $message = "Anfrage wurde erfolgreich gesendet!";
+                  $type = "successContact";
+              }
+            } else {
+              $message = "Anfrage konnte nicht gesendet werden!";
+              $type = "errorContact";
+            }
           }
         }
-      }
-      require_once "contact.php";
-      ?>
+        require_once "contact.php";
+        ?>
+
+        <div id="googlemaps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.0880339270648!2d13.360240315595057!3d48.913714979292926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4774e081e2797199%3A0xc306ecdf125206d9!2sHauptstra%C3%9Fe%2013%2C%2094518%20Spiegelau!5e0!3m2!1sde!2sde!4v1586096352777!5m2!1sde!2sde"
+                  width="100%"
+                  height="500"
+                  frameborder="0"
+                  style="border:0;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"></iframe>
+        </div>
     </section>
 
     <!-- Footer per PHP einfügen -->
