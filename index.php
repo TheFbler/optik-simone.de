@@ -41,29 +41,29 @@
         <li onclick="changeTextLeistung('Brillen')">
           <i class="fas fa-glasses"></i>
           <p>Brillen</p>
-        </li>
-        <li onclick="changeTextLeistung('Kontaktlinsen')">
+        </li><!--
+        --><li onclick="changeTextLeistung('Kontaktlinsen')">
           <i class="fas fa-eye"></i>
           <p>Kontaktlinsen</p>
-        </li>
-        <li onclick="changeTextLeistung('Fuehrerscheinsehtest')">
+        </li><!--
+        --><li onclick="changeTextLeistung('Fuehrerscheinsehtest')">
           <i class="fas fa-car"></i>
           <p>Führerscheinsehtest</p>
-        </li>
-        <li onclick="changeTextLeistung('Passbilder')">
+        </li><!--
+        --><li onclick="changeTextLeistung('Passbilder')">
           <i class="fas fa-camera-retro"></i>
           <p>Passbilder</p>
-        </li>
-        <li onclick="changeTextLeistung('Beratung')">
+        </li><!--
+        --><li onclick="changeTextLeistung('Beratung')">
           <i class="fas fa-comments"></i>
           <p>Beratung</p>
-        </li>
-        <li onclick="changeTextLeistung('Reperaturen')">
+        </li><!--
+        --><li onclick="changeTextLeistung('Reperaturen')">
           <i class="fas fa-tools"></i>
           <p>Reparaturen</p>
         </li>
       </ul>
-      <p id="leistungBeschreibung"></p>
+      <p class="centerText" id="leistungBeschreibung">Wählen Sie eine Leistung!</p>
     </section>
 
     <!-- HISTORIE -->
@@ -175,6 +175,46 @@
           </div>
         </li>
       </ul>
+      <?php
+      if(!empty($_POST["sendMail"])) {
+        if(isset($_POST['g-recaptcha-response'])){
+          $captcha=$_POST['g-recaptcha-response'];
+        }
+        if(!$captcha){
+          $message = "Bitte beachten Sie das Captcha!";
+          $type = "errorContact";
+        } else {//Wenn das Captcha geklickt wurde weiter prüfen
+          $ff = file('config/keys.txt');  //Secret Key nicht im Repo speichern
+          foreach($ff as $key=>$value) {
+            $ffe = explode("=", $value);//Wert vor und nach = auslesen
+            $ffa[$ffe[0]]=$ffe[1];//Key Value Paar in assozitivem Array speichern
+          }
+
+          $secretKey = $ffa["captchasecretkey"];//Secret Key auslesen
+          // post request to server
+          $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
+          $response = file_get_contents($url);
+          $responseKeys = json_decode($response,true);
+          // should return JSON with success as true
+          if($responseKeys["success"]) {
+            $name = $_POST["userName"];
+          	$email = $_POST["userEmail"];
+          	$content = $_POST["content"];
+
+          	$toEmail = "fabian@thefbler.de";
+            $mailHeaders = "From: " . $name . "<". $email .">\r\n";
+          	if(mail($toEmail, "Kontaktformular: Anfrage von " . $_POST["userName"], $content, $mailHeaders)) {
+          	    $message = "Anfrage wurde erfolgreich gesendet!";
+          	    $type = "successContact";
+          	}
+          } else {
+            $message = "Anfrage konnte nicht gesendet werden!";
+            $type = "errorContact";
+          }
+        }
+      }
+      require_once "contact.php";
+      ?>
     </section>
 
     <!-- Footer per PHP einfügen -->
