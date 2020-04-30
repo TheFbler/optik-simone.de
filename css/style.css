@@ -311,7 +311,7 @@ header nav ul li:hover {
 .anordnungAbout li img {
   display: block;
   margin: 0 auto 0 auto;
-  max-width: 100%;
+  max-width: 600px;
   vertical-align: middle;
   height: auto;
   padding: 0;
@@ -468,6 +468,7 @@ header nav ul li:hover {
 
 .btnSubmit:hover {
   cursor: pointer;
+  background-color: #780b10;
 }
 
 /* BACK TO TOP */

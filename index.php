@@ -126,7 +126,7 @@
           <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
         </li><!-- Fix white space between blocks
         --><li>
-          <img src="https://via.placeholder.com/600x400.png"/>
+          <img src="img/die_chefin.jpg"/>
         </li>
       </ul>
     </section>
@@ -159,7 +159,7 @@
             <p><a href="mailto:info@optik-simone.de">info@optik-simone.de</a></p>
           </li>
         </ul>
-        
+
         <?php
         if(!empty($_POST["sendMail"])) {
           if(isset($_POST['g-recaptcha-response'])){
