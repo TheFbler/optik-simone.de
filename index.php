@@ -63,7 +63,7 @@
           <p>Reparaturen</p>
         </li>
       </ul>
-      <p class="centerText" id="leistungBeschreibung">Wählen Sie eine Leistung!</p>
+      <p class="centerText" id="leistungBeschreibung">Bitte wählen Sie eine Leistung für mehr Informationen!</p>
     </section>
 
     <!-- HISTORIE -->
@@ -159,7 +159,7 @@
             <p><a href="mailto:info@optik-simone.de">info@optik-simone.de</a></p>
           </li>
         </ul>
-
+        
         <?php
         if(!empty($_POST["sendMail"])) {
           if(isset($_POST['g-recaptcha-response'])){
@@ -186,7 +186,7 @@
               $email = $_POST["userEmail"];
               $content = $_POST["content"];
 
-              $toEmail = "fabian@thefbler.de";
+              $toEmail = "info@optik-simone.de";
               $mailHeaders = "From: " . $name . "<". $email .">\r\n";
               if(mail($toEmail, "Kontaktformular: Anfrage von " . $_POST["userName"], $content, $mailHeaders)) {
                   $message = "Anfrage wurde erfolgreich gesendet!";

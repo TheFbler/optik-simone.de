@@ -295,6 +295,9 @@ header nav ul li:hover {
 }
 
 .anordnungAbout {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   padding: 0;      /* Override defaults for lists */
   margin: 20px auto 20px auto;     /* Override defaults for lists */
   width: 90%;     /* Get the row full width */
@@ -302,12 +305,7 @@ header nav ul li:hover {
 }
 
 .anordnungAbout li {
-  width: 50%;
-  display: inline-block;
-}
-
-.anordnungAbout li p {
-
+  flex-basis: 50%;
 }
 
 .anordnungAbout li img {
@@ -415,7 +413,7 @@ header nav ul li:hover {
 
 #googlemaps {
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: 20px auto 0 auto;
   padding: 0;
 }
 
