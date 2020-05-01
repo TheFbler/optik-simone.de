@@ -302,6 +302,7 @@ header nav ul li:hover {
   margin: 20px auto 20px auto;     /* Override defaults for lists */
   width: 90%;     /* Get the row full width */
   list-style: none;
+  max-width: 100%;
 }
 
 .anordnungAbout li {
@@ -312,6 +313,7 @@ header nav ul li:hover {
   display: block;
   margin: 0 auto 0 auto;
   max-width: 600px;
+  width: 100%
   vertical-align: middle;
   height: auto;
   padding: 0;
@@ -529,6 +531,17 @@ footer a i {
 #datenschutz {
   width: 90%;
   margin:75px auto 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+  .anordnungAbout {
+    width: 100%;     /* Get the row full width */
+    flex-wrap: wrap;
+  }
+
+  .anordnungAbout li {
+    flex-basis: 100%;
+  }
 }
 
 /* TABLET VERSION */
