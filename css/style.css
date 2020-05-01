@@ -389,6 +389,18 @@ header nav ul li:hover {
   clear: both;
 }
 
+#test {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 auto 0 auto;
+  width: 90%;
+}
+
+#test li {
+  flex-basis: 50%;
+}
+
 #contact h2 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -408,11 +420,12 @@ header nav ul li:hover {
 }
 
 #contactinfo {
-  margin-bottom: 25px;
+  width: 90%;
+  margin: 0 auto 25px auto;
 }
 
 #contactinfo li {
-  width: 25%;
+  width: 50%;
   display: inline-block;
   margin: 0 0 30px 0;
   vertical-align: top;
@@ -428,7 +441,7 @@ header nav ul li:hover {
 
 #contact form {
   text-align: left;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -584,17 +597,16 @@ footer a i {
     margin-left: 10px;
   }
 
-  /* CONTACT */
-
-  #contactinfo li {
-    width: 50%;
-    height: 100%;
-  }
-
   #googlemaps {
     width: 100%;
     margin: 0 auto 0 auto;
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #test li {
+    flex-basis: 100%;
   }
 }
 
