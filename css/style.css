@@ -318,7 +318,7 @@ header nav ul li:hover {
   display: block;
   margin: 0 auto 0 auto;
   max-width: 600px;
-  width: 100%
+  width: 100%;
   vertical-align: middle;
   height: auto;
   padding: 0;
@@ -327,7 +327,8 @@ header nav ul li:hover {
 .alignmentOfP {
   display: block;
   vertical-align: middle;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto 0 auto;
   padding: 0;
   max-width: 100%;
@@ -559,7 +560,6 @@ footer a i {
 
 @media screen and (max-width: 1400px) {
   .anordnungAbout {
-    width: 100%;     /* Get the row full width */
     flex-wrap: wrap;
   }
 
@@ -599,7 +599,7 @@ footer a i {
 
   #googlemaps {
     width: 100%;
-    margin: 0 auto 0 auto;
+    margin: 20px auto 10px auto;
     padding: 0;
   }
 }
@@ -625,14 +625,13 @@ footer a i {
   }
 
   .fa-bars {
-    font-size: 20px;
+    font-size: 22px;
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    margin: 7px 10px 0 0;
+    margin: 8px 10px 0 0;
     padding: 2px 3px;
     color: #9a0d13;
-    border: 1px solid grey;
     position: relative;
     float: right;
   }
