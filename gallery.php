@@ -20,9 +20,9 @@
     <link rel="stylesheet" type="text/css" href="css/masonry.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.jpg">
     <link rel="manifest" href="/img/favicon/site.webmanifest">
     <link rel="shortcut icon" href="/img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffc40d">
@@ -43,55 +43,55 @@
         <div class="masonry">
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow1.png"
+                  data-src="img/gallery/gallery1.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow2.png"
+                  data-src="img/gallery/gallery2.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow3.png"
+                  data-src="img/gallery/gallery3.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow4.png"
+                  data-src="img/gallery/gallery4.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow5.png"
+                  data-src="img/gallery/gallery5.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow1.png"
+                  data-src="img/gallery/gallery6.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow3.png"
+                  data-src="img/gallery/gallery7.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow5.png"
+                  data-src="img/gallery/gallery8.jpg"
                   alt=""
                   title=""/>
           </div>
           <div class="brick">
             <img  class="lazyload"
-                  data-src="img/slideshow4.png"
+                  data-src="img/gallery/gallery9.jpg"
                   alt=""
                   title=""/>
           </div>
