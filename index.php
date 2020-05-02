@@ -120,20 +120,20 @@
       <h3 class="centerText">ÜBER UNS</h3>
       <hr/>
       <ul class="anordnungAbout">
-        <li>
+        <li id="aboutImg1">
           <img src="img/der_laden.jpg"/>
         </li><!-- Fix white space between blocks
-        --><li>
+        --><li id="aboutP1">
           <h2 class="centerText">Der Laden</h2>
           <div class="alignmentOfP"><p class="centerText aboutText"><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
         </li>
       </ul>
       <ul class="anordnungAbout">
-        <li>
+        <li id="aboutP2">
           <h2 class="centerText">Die Chefin</h2>
           <div class="alignmentOfP"><p class="centerText aboutText"><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
         </li><!-- Fix white space between blocks
-        --><li>
+        --><li id="aboutImg2">
           <img src="img/die_chefin.jpg"/>
         </li>
       </ul>
