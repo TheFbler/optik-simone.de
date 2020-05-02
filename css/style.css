@@ -109,16 +109,16 @@ header nav ul li:hover {
 #slideshow {
   width: 100%;
   height: 100vh;
-  background-position: center top;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation: slider 15s ease infinite 0s;
-  animation-timing-function: ease;
-  /*background-image: url('../img/background.jpg');*/
+  /*animation: slider 15s ease infinite 0s;
+  animation-timing-function: ease;*/
+  background-image: url('../img/background.jpg');
 }
 
-@-webkit-keyframes slider {
+/*@-webkit-keyframes slider {
   0% {
     background-image: url('../img/slideshow1.png');
   }
@@ -152,7 +152,7 @@ header nav ul li:hover {
   100% {
     background-image: url('../img/slideshow5.png');
   }
-}
+}*/
 
 /* TIMELINE */
 * {
@@ -316,7 +316,7 @@ header nav ul li:hover {
 
 .anordnungAbout li img {
   display: block;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 20px auto;
   max-width: 600px;
   width: 100%;
   vertical-align: middle;
@@ -328,10 +328,14 @@ header nav ul li:hover {
   display: block;
   vertical-align: middle;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto 0 auto;
   padding: 0;
   max-width: 100%;
+}
+
+.aboutText {
+  margin: 0 auto 0 auto;
+  max-width: 600px;
 }
 
 /* LEISTUNGEN */
@@ -495,7 +499,7 @@ header nav ul li:hover {
 /* GALLERY */
 
 #gallery h3 {
-  margin-top: 110px;
+  margin-top: 65px;
 }
 
 /* BACK TO TOP */

@@ -121,17 +121,17 @@
       <hr/>
       <ul class="anordnungAbout">
         <li>
-          <img src="https://via.placeholder.com/600x400.png"/>
+          <img src="img/der_laden.jpg"/>
         </li><!-- Fix white space between blocks
         --><li>
           <h2 class="centerText">Der Laden</h2>
-          <div class="alignmentOfP centerText"><p><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
+          <div class="alignmentOfP"><p class="centerText aboutText"><?php echo file_get_contents("texts/about1.txt"); ?></p></div>
         </li>
       </ul>
       <ul class="anordnungAbout">
         <li>
           <h2 class="centerText">Die Chefin</h2>
-          <div class="alignmentOfP"><p><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
+          <div class="alignmentOfP"><p class="centerText aboutText"><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
         </li><!-- Fix white space between blocks
         --><li>
           <img src="img/die_chefin.jpg"/>
@@ -149,20 +149,20 @@
               <li>
                 <h2>Öffnungszeiten:</h2><br/>
                 <p>Montag - Freitag:<br/>
-                09:00 - 13:00<br/>
+                09:30 - 12:30<br/>
                 14:00 - 18:00<br/>
                 <br/></p>
                 <p>Samstag:<br/>
-                09:00 - 12:00</p>
-              </li><!-- Fix white space between blocks
-              --><li>
-                <h2>Telefon:</h2><br/>
-                <p><a href="tel:085536463">08553 / 6463</a></p>
+                09:30 - 12:00</p>
               </li><!-- Fix white space between blocks
               --><li>
                 <h2>Anschrift:</h2><br/>
                 <p>Hauptstr. 13<br/>
                 94518 Spiegelau</p>
+              </li><!-- Fix white space between blocks
+              --><li>
+                <h2>Telefon:</h2><br/>
+                <p><a href="tel:085536463">08553 / 6463</a></p>
               </li><!-- Fix white space between blocks
               --><li>
                 <h2>E-Mail:</h2><br/>
