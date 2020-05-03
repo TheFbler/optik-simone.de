@@ -29,12 +29,7 @@ p {
 }
 
 section {
-  min-height: 100%;
   width: 100%;
-}
-
-section:nth-child(odd) {
-  background-color: #ebeef2;
 }
 
 hr {
@@ -104,6 +99,9 @@ header nav ul li:hover {
 }
 
 /* HOME */
+#home {
+  min-height: 100%;
+}
 
 /* SLIDESHOW */
 #slideshow {

@@ -61,7 +61,7 @@
             <p>Kontaktlinsen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Brillen</p>
+            <p>Test Kontaktlinsen</p>
           </div>
         </li>
         <li>
@@ -70,7 +70,7 @@
             <p>Führerscheinsehtest</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Brillen</p>
+            <p>Test Führerscheinsehtest</p>
           </div>
         </li>
         <li>
@@ -88,7 +88,7 @@
             <p>Beratung</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Brillen</p>
+            <p>Test Beratung</p>
           </div>
         </li>
         <li>
@@ -97,7 +97,7 @@
             <p>Reparaturen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Brillen</p>
+            <p>Test Reparaturen</p>
           </div>
         </li>
       </ul>
