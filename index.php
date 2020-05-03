@@ -45,9 +45,9 @@
       <h3 class="centerText">LEISTUNGEN</h3>
       <hr/>
       <h4 class="centerText">Spiegelauer Brillenwerkstatt - echtes Brillenhandwerk für besten Durchblick</h4>
-      <ul class="centerText">
+      <ul>
         <li>
-          <div class="leistungBox">
+          <div class="leistungBox centerText">
             <i class="leistungIcon fas fa-glasses"></i>
             <p>Brillen</p>
           </div>
@@ -56,7 +56,7 @@
           </div>
         </li>
         <li>
-          <div class="leistungBox">
+          <div class="leistungBox centerText">
             <i class="leistungIcon fas fa-eye"></i>
             <p>Kontaktlinsen</p>
           </div>
@@ -65,16 +65,16 @@
           </div>
         </li>
         <li>
-          <div class="leistungBox">
+          <div class="leistungBox centerText">
             <i class="leistungIcon fas fa-car"></i>
-            <p>Test</p>
+            <p>Führerscheinsehtest</p>
           </div>
           <div class="leistungBoxContent">
             <p>Test Brillen</p>
           </div>
         </li>
         <li>
-          <div class="leistungBox">
+          <div class="leistungBox centerText">
             <i class="leistungIcon fas fa-camera-retro"></i>
             <p>Passbilder</p>
           </div>
@@ -83,7 +83,7 @@
           </div>
         </li>
         <li>
-          <div class="leistungBox">
+          <div class="leistungBox centerText">
             <i class="leistungIcon fas fa-comments"></i>
             <p>Beratung</p>
           </div>
@@ -92,7 +92,7 @@
           </div>
         </li>
         <li>
-          <div class="leistungBox">
+          <div class="leistungBox centerText">
             <i class="leistungIcon fas fa-tools"></i>
             <p>Reparaturen</p>
           </div>
@@ -172,7 +172,7 @@
     <section class="centerText" id="contact">
       <h3>KONTAKT</h3>
       <hr/>
-        <ul id="test">
+        <ul id="contactAufteilung">
           <li>
             <ul id="contactinfo">
               <li>
