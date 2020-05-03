@@ -33,7 +33,7 @@ section {
   width: 100%;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: #ebeef2;
 }
 
@@ -368,44 +368,58 @@ header nav ul li:hover {
   font-weight: 700;
 }
 
-#leistungBeschreibung {
-  width: 75%;
-  margin: 25px auto 0 auto;
-}
-
 #leistungen ul {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   padding: 0;
+  margin: 0;
   width: 90%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
 }
 
 #leistungen ul li {
+  flex-basis: 33%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.leistungBox {
   background-color: #9a0d13;
-  padding: 25px 10px 25px 10px;
   color: white;
-  width: 25%;
-  display: inline-block;
-  margin: 10px;
+  flex-basis: 25%;
+  height: 125px;
   opacity: 1;
-  cursor: pointer;
+  padding-top: 15px;
 }
 
-#leistungen ul li:nth-child(even) {
-  background-color: #cd933b
+.leistungBox p {
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-weight: 500;
 }
 
-#leistungen ul li:hover {
+.leistungBox:hover {
   opacity: 0.8;
 }
 
-#leistungen ul li p {
-  font-size: 25px;
-  margin-bottom: 0px;
+.leistungBoxContent {
+  background-color: #d1d1d1;
+  flex-basis: 75%;
+  height: 125px;
+  text-align: left;
 }
 
-#leistungen ul li i {
-  font-size: 40px;
+.leistungBoxContent p {
+  padding: 5px;
+  margin: 0;
+}
+
+.leistungIcon {
+  font-size: 45px;
 }
 
 /* CONTACT */

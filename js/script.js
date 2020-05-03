@@ -18,31 +18,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function changeTextLeistung(item) {
-  var text = "";
-  switch(item) {
-    case "Brillen":
-      text = "Test Brillen";
-      break;
-    case "Kontaktlinsen":
-      text = "Test Kontaktlinsen"
-      break;
-    case "Fuehrerscheinsehtest":
-      text = "Test Fuehrerscheinsehtest"
-      break;
-    case "Passbilder":
-      text = "Test Passbilder"
-      break;
-    case "Beratung":
-      text = "Test Beratung"
-      break;
-    case "Reperaturen":
-      text = "Test Reparaturen";
-      break;
-  }
-  document.getElementById("leistungBeschreibung").innerHTML = text;
-}
-
 function validateContactForm() {
   var formValid = true;
 

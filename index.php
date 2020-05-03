@@ -46,32 +46,61 @@
       <hr/>
       <h4 class="centerText">Spiegelauer Brillenwerkstatt - echtes Brillenhandwerk für besten Durchblick</h4>
       <ul class="centerText">
-        <li onclick="changeTextLeistung('Brillen')">
-          <i class="fas fa-glasses"></i>
-          <p>Brillen</p>
-        </li><!--
-        --><li onclick="changeTextLeistung('Kontaktlinsen')">
-          <i class="fas fa-eye"></i>
-          <p>Kontaktlinsen</p>
-        </li><!--
-        --><li onclick="changeTextLeistung('Fuehrerscheinsehtest')">
-          <i class="fas fa-car"></i>
-          <p>Führerscheinsehtest</p>
-        </li><!--
-        --><li onclick="changeTextLeistung('Passbilder')">
-          <i class="fas fa-camera-retro"></i>
-          <p>Passbilder</p>
-        </li><!--
-        --><li onclick="changeTextLeistung('Beratung')">
-          <i class="fas fa-comments"></i>
-          <p>Beratung</p>
-        </li><!--
-        --><li onclick="changeTextLeistung('Reperaturen')">
-          <i class="fas fa-tools"></i>
-          <p>Reparaturen</p>
+        <li>
+          <div class="leistungBox">
+            <i class="leistungIcon fas fa-glasses"></i>
+            <p>Brillen</p>
+          </div>
+          <div class="leistungBoxContent">
+            <p>Test Brillen</p>
+          </div>
+        </li>
+        <li>
+          <div class="leistungBox">
+            <i class="leistungIcon fas fa-eye"></i>
+            <p>Kontaktlinsen</p>
+          </div>
+          <div class="leistungBoxContent">
+            <p>Test Brillen</p>
+          </div>
+        </li>
+        <li>
+          <div class="leistungBox">
+            <i class="leistungIcon fas fa-car"></i>
+            <p>Test</p>
+          </div>
+          <div class="leistungBoxContent">
+            <p>Test Brillen</p>
+          </div>
+        </li>
+        <li>
+          <div class="leistungBox">
+            <i class="leistungIcon fas fa-camera-retro"></i>
+            <p>Passbilder</p>
+          </div>
+          <div class="leistungBoxContent">
+            <p>Test Brillen</p>
+          </div>
+        </li>
+        <li>
+          <div class="leistungBox">
+            <i class="leistungIcon fas fa-comments"></i>
+            <p>Beratung</p>
+          </div>
+          <div class="leistungBoxContent">
+            <p>Test Brillen</p>
+          </div>
+        </li>
+        <li>
+          <div class="leistungBox">
+            <i class="leistungIcon fas fa-tools"></i>
+            <p>Reparaturen</p>
+          </div>
+          <div class="leistungBoxContent">
+            <p>Test Brillen</p>
+          </div>
         </li>
       </ul>
-      <p class="centerText" id="leistungBeschreibung">Bitte wählen Sie eine Leistung für mehr Informationen!</p>
     </section>
 
     <!-- HISTORIE -->
