@@ -157,9 +157,9 @@ header nav ul li:hover {
 #importantNewsBox {
   position: relative;
   top: 100px;
-  left: 300px;
-  width: 25%;
-  background-color: rgba(255, 21, 0, 0.3);
+  left: 5%;
+  width: 35%;
+  background-color: rgba(255, 21, 0, 0.4);
   padding: 10px;
 }
 
@@ -686,17 +686,33 @@ footer a i {
     font-size: 15px;
     margin-left: 15px;
   }
+
+  #importantNewsBox {
+    top: 60%;
+    left: 45%;
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 900px) {
   #leistungen ul li {
     flex-basis: 50%;
   }
+
+  #importantNewsBox {
+    width: 100%;
+    top: 65%;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
   #contactAufteilung li {
     flex-basis: 100%;
+  }
+
+  #importantNewsBox {
+    top: 45%;
   }
 }
 
@@ -762,7 +778,6 @@ footer a i {
   }
 
   #googlemaps {
-    width: 100%;
     margin: 20px auto 10px auto;
     padding: 0;
   }

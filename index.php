@@ -132,27 +132,25 @@
         <div class="container right">
           <div class="content">
             <h2>1994</h2>
-            <p>Abschluss meiner Lehre bei Optik Walter mit der Gesellenprüfung in München.</p>
+            <p>Abschluss meiner Lehre bei Optik Walter mit der Gesellenprüfung in München</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
             <h2>1998</h2>
-            <p>Erfolgreich die Meisterprüfung im Augenoptikerhandwerk, mit Auszeichnung der Privatschule für Augenoptik in Karlsruhe, abgelegt.</p>
+            <p>Erfolgreiche Ablegung der Meisterprüfung im Augenoptikerhandwerk in Kassel mit Auszeichnung der Privatschule für Augenoptik in Karlsruhe</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
             <h2>2000</h2>
-            <p>Betriebsleiterin für die Filiale von Optik Walter in Spiegelau.</p>
+            <p>Übernahme der Verantwortung für die Filiale von Optik Walter in Spiegelau als Betriebsleiterin</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
             <h2>2020</h2>
-            <p>Mit der Erfahrung von 22 Meisterjahren erfülle ich mir nun meinen
-            Traum vom eigenen Optikfachgeschäft und mache den Schritt in die
-            Selbstständigkeit mit Optik Simone.</p>
+            <p>Ein Traum wird wahr: Der Schritt in die Selbstständigkeit mit Optik Simone nach 22 Jahren Erfahrung als Optikermeisterin</p>
           </div>
         </div>
       </div>
