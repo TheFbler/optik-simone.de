@@ -19,13 +19,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
   </head>
 
@@ -36,7 +36,21 @@
 
     <!-- HOME -->
     <section id="home">
-      <div id="slideshow"></div>
+      <div id="slideshow">
+        <?php
+          $ff = file('config/parameters.txt');  //Parameter auslesen
+          foreach($ff as $key=>$value) {
+            $ffe = explode("=", $value);//Wert vor und nach = auslesen
+            $ffa[$ffe[0]]=$ffe[1];//Key Value Paar in assozitivem Array speichern
+          }
+
+          if(trim($ffa["importantnewsbox"]) == "true") {
+            include("importantNewsBox.php");
+          } else {
+            echo "Test false";
+          }
+        ?>
+      </div>
     </section>
 
     <!-- LEISTUNGEN -->
@@ -209,7 +223,7 @@
                 $message = "Bitte beachten Sie das Captcha!";
                 $type = "errorContact";
               } else {//Wenn das Captcha geklickt wurde weiter prüfen
-                $ff = file('config/keys.txt');  //Secret Key nicht im Repo speichern
+                $ff = file('config/parameters.txt');  //Secret Key nicht im Repo speichern
                 foreach($ff as $key=>$value) {
                   $ffe = explode("=", $value);//Wert vor und nach = auslesen
                   $ffa[$ffe[0]]=$ffe[1];//Key Value Paar in assozitivem Array speichern
