@@ -34,7 +34,7 @@
     <!-- Header per PHP einfügen -->
     <?php echo file_get_contents("parts/header.html"); ?>
 
-    <section>
+    <section id="impressum">
       <h1>Impressum</h1>
 
       <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>

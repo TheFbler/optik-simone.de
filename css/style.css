@@ -645,6 +645,12 @@ footer a i {
   margin:75px auto 0 auto;
 }
 
+/* Datenschutz */
+#impressum {
+  width: 90%;
+  margin:75px auto 0 auto;
+}
+
 @media screen and (max-width: 1400px) {
   .anordnungAbout {
     flex-wrap: wrap;
