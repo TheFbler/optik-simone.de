@@ -46,8 +46,6 @@
 
           if(trim($ffa["importantnewsbox"]) == "true") {
             include("importantNewsBox.php");
-          } else {
-            echo "Test false";
           }
         ?>
       </div>
@@ -66,7 +64,8 @@
             <p>Brillen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Brillen</p>
+            <p>In unserem Geschäft finden Sie eine vielfältige Auswahl an Fassungsmodellen
+            die mit modernster Glastechnologie individuell für Sie angepasst und gefertigt werden.</p>
           </div>
         </li>
         <li>
@@ -75,7 +74,7 @@
             <p>Kontaktlinsen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Kontaktlinsen</p>
+            <p>Für Ihre Kontaktlinsen führen wir regelmäßige Sitz- und Stärkekontrollen durch.</p>
           </div>
         </li>
         <li>
@@ -84,7 +83,8 @@
             <p>Führerscheinsehtest</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Führerscheinsehtest</p>
+            <p>Wir führen für Sie als amtlich anerkannte Stelle den Führerscheinsehtest für die Klassen
+            A, A1, A2, B, BE, AM, L und T durch.</p>
           </div>
         </li>
         <li>
@@ -93,7 +93,7 @@
             <p>Passbilder</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Brillen</p>
+            <p>Bei uns können Sie Ihre biometrischen Passbilder und Bewerbungsfotos sofort mitnehmen.</p>
           </div>
         </li>
         <li>
@@ -102,7 +102,8 @@
             <p>Beratung</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Beratung</p>
+            <p>Bei kundenorientierter Beratung können Sie ohne Zeitdruck im einladenden Ambiente aus
+            der vielfältigen Auswahl Ihre Wohlfühlbrille entdecken.</p>
           </div>
         </li>
         <li>
@@ -111,7 +112,7 @@
             <p>Reparaturen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Test Reparaturen</p>
+            <p>In unserer hauseigenen Werkstatt werden Reparaturen schnell und zuverlässig durchgeführt.</p>
           </div>
         </li>
       </ul>
@@ -138,19 +139,19 @@
         <div class="container left">
           <div class="content">
             <h2>1998</h2>
-            <p>Erfolgreiche Ablegung der Meisterprüfung im Augenoptikerhandwerk in Kassel mit Auszeichnung der Privatschule für Augenoptik in Karlsruhe</p>
+            <p>Meisterprüfung im Augenoptikerhandwerk in Kassel mit Auszeichnung der Privatschule für Augenoptik in Karlsruhe</p>
           </div>
         </div>
         <div class="container right">
           <div class="content">
             <h2>2000</h2>
-            <p>Übernahme der Verantwortung für die Filiale von Optik Walter in Spiegelau als Betriebsleiterin</p>
+            <p>Übernahme der Betriebsleitung für die Filiale von Optik Walter in Spiegelau</p>
           </div>
         </div>
         <div class="container left">
           <div class="content">
             <h2>2020</h2>
-            <p>Ein Traum wird wahr: Der Schritt in die Selbstständigkeit mit Optik Simone nach 22 Jahren Erfahrung als Optikermeisterin</p>
+            <p>Ein Traum wird wahr: Der Schritt in die Selbstständigkeit mit Optik Simone nach 22 Jahren Erfahrung als Augenoptikmeisterin</p>
           </div>
         </div>
       </div>

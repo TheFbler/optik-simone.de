@@ -454,6 +454,12 @@ header nav ul li:hover {
   max-width: 70%;
   height: 125px;
   text-align: left;
+  /* Worttrennung */
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .leistungBoxContent p {
@@ -678,13 +684,8 @@ footer a i {
     margin-top: 10px;
   }
 
-  header nav {
-    margin-top: -5px;
-  }
-
   header nav ul li {
     font-size: 15px;
-    margin-left: 15px;
   }
 
   #importantNewsBox {
@@ -772,9 +773,8 @@ footer a i {
 
 /* OTHERS */
 @media screen and (max-width: 560px) {
-  /* HEADER */
-  header nav ul li {
-    margin-left: 10px;
+  #slideshow {
+    background-image: url('../img/background_mobil.jpg');
   }
 
   #googlemaps {
