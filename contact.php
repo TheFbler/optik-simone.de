@@ -1,13 +1,16 @@
 <form name="contactForm" method="post" enctype="multipart/form-data"
   onsubmit="return validateContactForm()">
-  <label>Name:</label><br/>
-  <input type="text" class="inputTextfield" name="userName" id="name"/><br/>
+  <label>Name:<br/>
+    <input type="text" class="inputTextfield" name="userName" id="name"/>
+  </label><br/>
   <span id="errorName"></span><br/>
-  <label>E-Mail:</label><br/>
-  <input type="text" class="inputTextfield" name="userEmail" id="email"/><br/>
+  <label>E-Mail:<br/>
+    <input type="text" class="inputTextfield" name="userEmail" id="email"/>
+  </label><br/>
   <span id="errorMail"></span><br/>
-  <label>Nachricht:</label><br/>
-  <textarea name="content" id="content" class="inputTextarea" cols="60" rows="6"></textarea><br/>
+  <label>Nachricht:<br/>
+    <textarea name="content" id="content" class="inputTextarea" cols="60" rows="6"></textarea>
+  </label><br/>
   <span id="errorContent"></span><br/>
   <div class="g-recaptcha" data-sitekey="TODO"></div><br/>
   <input type="submit" name="sendMail" class="btnSubmit" value="Senden" /><br/>

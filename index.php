@@ -163,7 +163,7 @@
       <hr/>
       <ul class="anordnungAbout">
         <li id="aboutImg1">
-          <img src="img/der_laden.jpg"/>
+          <img class="lazyload" alt="Der Laden" src="img/der_laden.jpg"/>
         </li><!-- Fix white space between blocks
         --><li id="aboutP1">
           <h2 class="centerText">Der Laden</h2>
@@ -176,7 +176,7 @@
           <div class="alignmentOfP"><p class="centerText aboutText"><?php echo file_get_contents("texts/about2.txt"); ?></p></div>
         </li><!-- Fix white space between blocks
         --><li id="aboutImg2">
-          <img src="img/die_chefin.jpg"/>
+          <img class="lazyload" alt="Die Chefin" src="img/die_chefin.jpg"/>
         </li>
       </ul>
     </section>
@@ -264,7 +264,8 @@
                   style="border:0;"
                   allowfullscreen=""
                   aria-hidden="false"
-                  tabindex="0"></iframe>
+                  tabindex="0"
+                  title="Lage von Optik Simone"></iframe>
         </div>
     </section>
 
