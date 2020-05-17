@@ -74,7 +74,7 @@
             <p>Kontaktlinsen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>Für Ihre Kontaktlinsen führen wir regelmäßige Sitz- und Stärkekontrollen durch.</p>
+            <p>Für Ihre Kontaktlinsen führen wir nach der Anpassung regelmäßig Sitz- und Stärkekontrollen durch.</p>
           </div>
         </li>
         <li>
