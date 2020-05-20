@@ -64,7 +64,7 @@
             <p>Brillen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>In unserem Geschäft finden Sie eine vielfältige Auswahl an Fassungsmodellen
+            <p>In unserem Geschäft finden Sie eine vielfältige Auswahl an Fassungsmodellen,
             die mit modernster Glastechnologie individuell für Sie angepasst und gefertigt werden.</p>
           </div>
         </li>
@@ -112,7 +112,8 @@
             <p>Reparaturen</p>
           </div>
           <div class="leistungBoxContent">
-            <p>In unserer hauseigenen Werkstatt werden Reparaturen schnell und zuverlässig durchgeführt.</p>
+            <p>In unserer hauseigenen Werkstatt werden Reparaturen schnell und zuverlässig durchgeführt.
+            Zudem werden Batteriewechsel (z.B. bei Uhren) am selben Tag erledigt.</p>
           </div>
         </li>
       </ul>
