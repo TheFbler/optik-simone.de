@@ -11,7 +11,7 @@
   <meta property="og:image" content="img/logo.png" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Optik Simone" />
-  <meta name="google-site-verification" content="" />
+  <meta name="google-site-verification" content="bqemPz2fY5lZdMk8Yj3KKEGEJLGUhs0MBWIoTmwiFW4" />
 
   <title>Optik Simone - Datenschutz</title>
 
