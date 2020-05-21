@@ -72,5 +72,6 @@
 
       <?php echo file_get_contents("parts/footer.html"); ?>
       <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/mobile-menu.js"></script>
     </body>
     </html>
