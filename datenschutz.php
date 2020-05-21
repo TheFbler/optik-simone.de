@@ -73,5 +73,6 @@
       <?php echo file_get_contents("parts/footer.html"); ?>
       <script type="text/javascript" src="js/script.js"></script>
       <script type="text/javascript" src="js/mobile-menu.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     </body>
     </html>
