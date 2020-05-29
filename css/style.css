@@ -346,6 +346,7 @@ header nav ul li:hover {
   padding: 0;      /* Override defaults for lists */
   margin: 0 auto 0 auto;     /* Override defaults for lists */
   width: 90%;     /* Get the row full width */
+  max-width: 1200px;
   list-style: none;
   max-width: 100%;
 }
@@ -409,6 +410,7 @@ header nav ul li:hover {
 }
 
 #leistungen ul {
+  max-width: 1200px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -491,6 +493,7 @@ header nav ul li:hover {
   list-style: none;
   margin: 0 auto 0 auto;
   width: 90%;
+  max-width: 1200px;
 }
 
 #contactAufteilung li {
