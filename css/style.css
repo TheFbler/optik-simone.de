@@ -348,7 +348,6 @@ header nav ul li:hover {
   width: 90%;     /* Get the row full width */
   max-width: 1200px;
   list-style: none;
-  max-width: 100%;
 }
 
 .anordnungAbout li {
