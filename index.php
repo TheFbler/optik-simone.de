@@ -213,9 +213,9 @@
               </li>
             </ul>
           </li>
-          <!--<li>
+          <li>
             <?php
-            /*if(!empty($_POST["sendMail"])) {
+            if(!empty($_POST["sendMail"])) {
               if(isset($_POST['g-recaptcha-response'])){
                 $captcha=$_POST['g-recaptcha-response'];
               }
@@ -253,8 +253,8 @@
               }
             }
             require_once "contact.php";
-            */?>
-          </li>-->
+            ?>
+          </li>
         </ul>
 
         <div id="googlemaps">
