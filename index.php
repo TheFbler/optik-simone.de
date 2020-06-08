@@ -266,7 +266,8 @@
                   allowfullscreen=""
                   aria-hidden="false"
                   tabindex="0"
-                  title="Lage von Optik Simone"></iframe>
+                  title="Lage von Optik Simone"
+                  class="lazyload"></iframe>
         </div>
     </section>
 
