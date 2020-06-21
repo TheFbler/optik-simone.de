@@ -54,9 +54,8 @@ header {
 }
 
 #logo {
-  float: left;
-  width: 185px;
-  margin: 17px 0 0 30px;
+  width: 210px;
+  margin: 32px auto 0 auto;
 }
 
 #logo:hover {
@@ -67,9 +66,8 @@ header {
   width: 100%;
 }
 
-header nav {
-  float: right;
-  margin: 10px 30px 0 0;
+header {
+  text-align: center;
 }
 
 header a {
@@ -81,9 +79,24 @@ header li {
   list-style: none;
 }
 
+header nav {
+  display: inline-block;
+  margin: 7px auto 0 auto;
+  padding: 0;
+}
+
+header ul {
+  padding: 0;
+}
+
 header nav ul li {
+  text-transform: uppercase;
   float: left;
-  margin-left: 25px;
+  margin: 0 10px;
+}
+
+header nav ul li:nth-child(3) {
+  margin-right: 250px;
 }
 
 header nav ul li a {
@@ -92,6 +105,16 @@ header nav ul li a {
 
 header nav ul li:hover {
   opacity: 0.5;
+}
+
+#oval {
+  position: fixed;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  height: 100px;
+  background: white;
+  border-radius: 125px / 50px;
 }
 
 .centerText {
@@ -695,17 +718,33 @@ footer a i {
     height: 40px;
   }
 
+  #oval {
+    margin-left: -80px;
+    margin-top: -30px;
+    width: 160px;
+    height: 100px;
+    background: white;
+    border-radius: 80px / 50px;
+  }
+
   #logo {
     width: 120px;
-    margin-top: 10px;
+  }
+
+  #logo img {
+    margin-top: 20px;
   }
 
   header nav {
-    margin: 0 30px 0 0;
+    margin-top: -5px;
   }
 
-  header nav ul li {
-    font-size: 15px;
+  header nav ul li:nth-child(3) {
+    margin-right: 160px;
+  }
+
+  header nav ul li a {
+    font-size: 14px;
   }
 
   #importantNewsBox {
@@ -739,15 +778,14 @@ footer a i {
 
 @media screen and (max-width: 670px) {
   /* HEADER */
-  #logo {
+  /*#logo {
     width: 90px;
     margin-left: 10px;
     margin-top: 13px;
-  }
+  }*/
 
   header nav {
-    float: none;
-    margin: 0;
+    width: 100%;
   }
 
   .fa-bars {
@@ -755,7 +793,7 @@ footer a i {
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    margin: 8px 10px 0 0;
+    margin: 12px 10px 0 0;
     padding: 2px 3px;
     color: #9a0d13;
     position: relative;
@@ -769,7 +807,7 @@ footer a i {
   header nav ul {
     height: 0;
     overflow: hidden;
-    margin: 0;
+    margin: 45px 0 0 0;
     padding: 0;
     width: 100%;
   }
@@ -787,6 +825,7 @@ footer a i {
   }
 
   header nav ul li {
+    text-align: left;
     background-color: #eeeeee;
   }
 }
