@@ -24,6 +24,7 @@ function validateContactForm() {
   var formName = $('#name').val();
   var formMail = $('#email').val();
   var formContent = $('#content').val();
+  var datenschutz = $('#datenschutzCheckbox');
   var regExMail = new RegExp("^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$");
 
   if(formName == "") {
@@ -48,6 +49,12 @@ function validateContactForm() {
     formValid = false;
     $("#errorContent").html("Pflichtfeld");
     $("#content").css('border', '#e66262 1px solid');
+  }
+
+  if(!datenschutz.is(':checked')) {
+    formValid = false;
+    $("#errorDatenschutz").html("Pflichtfeld");
+    //$("#datenschutzCheckbox").css('outline', '#e66262 1px solid');
   }
 
   return formValid;
