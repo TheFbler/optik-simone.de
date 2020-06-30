@@ -53,7 +53,7 @@ function validateContactForm() {
 
   if(!datenschutz.is(':checked')) {
     formValid = false;
-    $("#errorDatenschutz").html("Pflichtfeld");
+    $("#errorDatenschutz").html("Bitte beachten Sie die Datenschutzerklärung");
     //$("#datenschutzCheckbox").css('outline', '#e66262 1px solid');
   }
 

@@ -12,10 +12,8 @@
     <textarea name="content" id="content" class="inputTextarea" cols="60" rows="6"></textarea>
   </label><br/>
   <span id="errorContent"></span><br/>
-  <div>
-    <input type="checkbox" id="datenschutzCheckbox" name="datenschutzCheckbox">
-    <label for="datenschutzCheckbox">Die <a href="datenschutz.php">Datenschutzerklärung</a> habe ich zur Kenntnis genommen.</label>
-  </div><br/>
+  <input type="checkbox" id="datenschutzCheckbox" name="datenschutzCheckbox">
+  <label id="datenschutzCheckboxLabel" for="datenschutzCheckbox">Die <a href="datenschutz.php">Datenschutzerklärung</a> habe ich zur Kenntnis genommen.</label><br>
   <span id="errorDatenschutz"></span><br/>
   <div class="g-recaptcha" data-sitekey="6Lf2KfoUAAAAAATS4pgJQNETnlBIAaRKZzd8vobT"></div><br/>
   <input type="submit" name="sendMail" class="btnSubmit" value="Senden" /><br/>

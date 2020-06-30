@@ -220,7 +220,7 @@
                 $captcha=$_POST['g-recaptcha-response'];
               }
               if(!$captcha){
-                $message = "Bitte beachten Sie das Captcha!";
+                $message = "Bitte beachten Sie das Captcha";
                 $type = "errorContact";
               } else {//Wenn das Captcha geklickt wurde weiter prüfen
                 $ff = file('config/parameters.txt');  //Secret Key nicht im Repo speichern
@@ -243,11 +243,11 @@
                   $toEmail = "info@optik-simone.de";
                   $mailHeaders = "From: " . $name . "<". $email .">\r\n";
                   if(mail($toEmail, "Kontaktformular: Anfrage von " . $_POST["userName"], $content, $mailHeaders)) {
-                      $message = "Anfrage wurde erfolgreich gesendet!";
+                      $message = "Ihre Anfrage wurde erfolgreich gesendet!";
                       $type = "successContact";
                   }
                 } else {
-                  $message = "Anfrage konnte nicht gesendet werden!";
+                  $message = "Ihre Anfrage konnte leider nicht gesendet werden!";
                   $type = "errorContact";
                 }
               }
