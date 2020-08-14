@@ -20,13 +20,14 @@
     <link rel="stylesheet" type="text/css" href="css/masonry.css">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffc40d">
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png?v=alJlkBqe0o">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png?v=alJlkBqe0o">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png?v=alJlkBqe0o">
+    <link rel="manifest" href="/img/favicon/site.webmanifest?v=alJlkBqe0o">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg?v=alJlkBqe0o" color="#000000">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico?v=alJlkBqe0o">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml?v=alJlkBqe0o">
     <meta name="theme-color" content="#ffffff">
   </head>
 
