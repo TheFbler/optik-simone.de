@@ -17,6 +17,7 @@
 
     <script src="https://kit.fontawesome.com/e8ddae4d2d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/extAnimations.css">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png?v=alJlkBqe0o">

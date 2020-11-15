@@ -59,3 +59,8 @@ function validateContactForm() {
 
   return formValid;
 }
+
+function noMoreSocialMedia() {
+  /*$("#socialMedia").css('display','none');*/
+  $("#importantNewsBox").addClass('fade-out-br');
+}
